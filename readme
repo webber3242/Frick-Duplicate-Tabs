@@ -1,41 +1,35 @@
-# Frick Duplicate Tabs
-
+Frick Duplicate Tabs: Automatically close them & Activate Remaining Tab Closer
 A Chrome extension that automatically detects and closes duplicate tabs to keep your browser organized and improve performance.
+Features
 
-## Features
+Automatic Detection: Monitors tabs in real-time for duplicates
+Smart Closing: Keeps the most recently accessed tab when duplicates are found
+Window-Aware: Only closes duplicates within the same browser window
+Startup Cleanup: Scans and removes existing duplicates when the extension starts
+Memory Efficient: Built-in cleanup system prevents memory leaks
 
-- **Automatic Detection**: Monitors tabs in real-time for duplicates
-- **Smart Closing**: Keeps the most recently accessed tab when duplicates are found
-- **Window-Aware**: Only closes duplicates within the same browser window
-- **Startup Cleanup**: Scans and removes existing duplicates when the extension starts
-- **Memory Efficient**: Built-in cleanup system prevents memory leaks
-
-## How It Works
-
+How It Works
 The extension continuously monitors your tabs and automatically closes duplicates based on:
-- URL matching (ignoring fragments and www subdomain)
-- Last accessed time
-- Tab focus and window activity
+
+URL matching (ignoring fragments and www subdomain)
+Last accessed time
+Tab focus and window activity
 
 When duplicates are detected, it intelligently keeps the most relevant tab and closes the others, then focuses the remaining tab.
+Installation
 
-## Installation
+Load the extension in Chrome's Developer Mode
+The extension will automatically start monitoring and closing duplicate tabs
+No configuration needed - it works silently in the background
 
-1. Load the extension in Chrome's Developer Mode
-2. The extension will automatically start monitoring and closing duplicate tabs
-3. No configuration needed - it works silently in the background
+Technical Details
 
-## Technical Details
+Uses Chrome Extensions API v3
+Lightweight background script with debounced operations
+Handles edge cases like loading tabs, chrome:// URLs, and browser navigation
+Includes periodic cleanup to prevent memory buildup
 
-- Uses Chrome Extensions API v3
-- Lightweight background script with debounced operations
-- Handles edge cases like loading tabs, chrome:// URLs, and browser navigation
-- Includes periodic cleanup to prevent memory buildup
 
----
-
-## Support Development
-
+Support Development
 If you find this extension helpful, consider supporting its development:
-
-**PayPal**: [paypal.me/AjayNarang96](https://paypal.me/AjayNarang96)
+PayPal: paypal.me/AjayNarang96
