@@ -1,30 +1,41 @@
-#Frick Duplicate Tabs
-Automatically closes duplicate tabs. Install it, forget about it, enjoy a cleaner browser.
-#What It Does
+# Frick Duplicate Tabs
 
-Detects duplicate tabs instantly
-Keeps the most recent/active tab
-Closes the duplicates automatically
-Works across multiple windows
-Cleans up existing duplicates on startup
+A Chrome extension that automatically detects and closes duplicate tabs to keep your browser organized and improve performance.
 
-#Installation
+## Features
 
-Download this extension
-Go to chrome://extensions/
-Enable "Developer mode"
-Click "Load unpacked"
-Done!
+- **Automatic Detection**: Monitors tabs in real-time for duplicates
+- **Smart Closing**: Keeps the most recently accessed tab when duplicates are found
+- **Window-Aware**: Only closes duplicates within the same browser window
+- **Startup Cleanup**: Scans and removes existing duplicates when the extension starts
+- **Memory Efficient**: Built-in cleanup system prevents memory leaks
 
-#Privacy
+## How It Works
 
-Works offline only
-No data collection
-No tracking
+The extension continuously monitors your tabs and automatically closes duplicates based on:
+- URL matching (ignoring fragments and www subdomain)
+- Last accessed time
+- Tab focus and window activity
 
-#Support Development
-PayPal: paypal.me/AjayNarang96
-#License
-MIT License - see LICENSE file
+When duplicates are detected, it intelligently keeps the most relevant tab and closes the others, then focuses the remaining tab.
 
- 
+## Installation
+
+1. Load the extension in Chrome's Developer Mode
+2. The extension will automatically start monitoring and closing duplicate tabs
+3. No configuration needed - it works silently in the background
+
+## Technical Details
+
+- Uses Chrome Extensions API v3
+- Lightweight background script with debounced operations
+- Handles edge cases like loading tabs, chrome:// URLs, and browser navigation
+- Includes periodic cleanup to prevent memory buildup
+
+---
+
+## Support Development
+
+If you find this extension helpful, consider supporting its development:
+
+**PayPal**: [paypal.me/AjayNarang96](https://paypal.me/AjayNarang96)
