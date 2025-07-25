@@ -16,20 +16,15 @@ Last accessed time
 Tab focus and window activity
 
 When duplicates are detected, it intelligently keeps the most relevant tab and closes the others, then focuses the remaining tab.
-Installation
-
+#Installation
 Load the extension in Chrome's Developer Mode
 The extension will automatically start monitoring and closing duplicate tabs
 No configuration needed - it works silently in the background
 
-Technical Details
-
-Uses Chrome Extensions API v3
-Lightweight background script with debounced operations
-Handles edge cases like loading tabs, chrome:// URLs, and browser navigation
-Includes periodic cleanup to prevent memory buildup
-
-
-Support Development
-If you find this extension helpful, consider supporting its development:
+ 
+-> Uses Chrome Extensions API v3
+-> Handles edge cases like loading tabs, chrome:// URLs, and browser navigation
+ 
+ 
+If you find this extension helpful, consider making a donation  : Appreciate it.
 PayPal: paypal.me/AjayNarang96
