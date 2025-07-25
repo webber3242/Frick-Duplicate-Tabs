@@ -7,16 +7,12 @@ Smart Closing: Keeps the most recently accessed tab when duplicates are found
 Window-Aware: Only closes duplicates within the same browser window
 Startup Cleanup: Scans and removes existing duplicates when the extension starts
 Memory Efficient: Built-in cleanup system prevents memory leaks
-
-How It Works
+ 
 The extension continuously monitors your tabs and automatically closes duplicates based on:
-
-URL matching (ignoring fragments and www subdomain)
-Last accessed time
-Tab focus and window activity
+URL matching (ignoring hash, case, and www subdomain), last accessed time, and Tab Focus and Window Activity
 
 When duplicates are detected, it intelligently keeps the most relevant tab and closes the others, then focuses the remaining tab.
-#Installation
+Installation
 Load the extension in Chrome's Developer Mode
 The extension will automatically start monitoring and closing duplicate tabs
 No configuration needed - it works silently in the background
